@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/nerdle/static/css/main.e3ed9d59.css",
-    "main.js": "/nerdle/static/js/main.7b797986.js",
-    "static/media/Cross.png": "/nerdle/static/media/Cross.cbf77228e847522eff11.png",
-    "static/media/Success.png": "/nerdle/static/media/Success.df533be8f86a57bc5946.png",
-    "static/media/Ranade-Variable.ttf": "/nerdle/static/media/Ranade-Variable.bb177f94a709e8e8f396.ttf",
-    "index.html": "/nerdle/index.html",
-    "static/media/Github.svg": "/nerdle/static/media/Github.6a9e1709e73c56888979048bb60e60a5.svg",
-    "static/media/Settings.svg": "/nerdle/static/media/Settings.0808c435ed629b919ffa742a20d897f6.svg",
-    "static/media/Info.svg": "/nerdle/static/media/Info.ee717ac430bb01bfbbd42aa3dbffe913.svg",
-    "static/media/Close.svg": "/nerdle/static/media/Close.f34771d5d250820d8c5ec83c816bf8f5.svg",
-    "main.e3ed9d59.css.map": "/nerdle/static/css/main.e3ed9d59.css.map",
-    "main.7b797986.js.map": "/nerdle/static/js/main.7b797986.js.map"
+    "main.css": "/hurdle/static/css/main.0c1e4d56.css",
+    "main.js": "/hurdle/static/js/main.c66446a8.js",
+    "static/media/Cross.png": "/hurdle/static/media/Cross.cbf77228e847522eff11.png",
+    "static/media/Success.png": "/hurdle/static/media/Success.df533be8f86a57bc5946.png",
+    "static/media/Ranade-Variable.ttf": "/hurdle/static/media/Ranade-Variable.bb177f94a709e8e8f396.ttf",
+    "index.html": "/hurdle/index.html",
+    "static/media/Github.svg": "/hurdle/static/media/Github.6a9e1709e73c56888979048bb60e60a5.svg",
+    "static/media/Settings.svg": "/hurdle/static/media/Settings.0808c435ed629b919ffa742a20d897f6.svg",
+    "static/media/Info.svg": "/hurdle/static/media/Info.ee717ac430bb01bfbbd42aa3dbffe913.svg",
+    "static/media/Close.svg": "/hurdle/static/media/Close.f34771d5d250820d8c5ec83c816bf8f5.svg",
+    "main.0c1e4d56.css.map": "/hurdle/static/css/main.0c1e4d56.css.map",
+    "main.c66446a8.js.map": "/hurdle/static/js/main.c66446a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3ed9d59.css",
-    "static/js/main.7b797986.js"
+    "static/css/main.0c1e4d56.css",
+    "static/js/main.c66446a8.js"
   ]
 }
