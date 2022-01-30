@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hurdle/static/css/main.0c1e4d56.css",
-    "main.js": "/hurdle/static/js/main.195e53d7.js",
+    "main.css": "/hurdle/static/css/main.7217d446.css",
+    "main.js": "/hurdle/static/js/main.3b78bf95.js",
     "static/media/Cross.png": "/hurdle/static/media/Cross.cbf77228e847522eff11.png",
     "static/media/Success.png": "/hurdle/static/media/Success.df533be8f86a57bc5946.png",
     "static/media/Ranade-Variable.ttf": "/hurdle/static/media/Ranade-Variable.bb177f94a709e8e8f396.ttf",
@@ -10,11 +10,11 @@
     "static/media/Settings.svg": "/hurdle/static/media/Settings.0808c435ed629b919ffa742a20d897f6.svg",
     "static/media/Info.svg": "/hurdle/static/media/Info.ee717ac430bb01bfbbd42aa3dbffe913.svg",
     "static/media/Close.svg": "/hurdle/static/media/Close.f34771d5d250820d8c5ec83c816bf8f5.svg",
-    "main.0c1e4d56.css.map": "/hurdle/static/css/main.0c1e4d56.css.map",
-    "main.195e53d7.js.map": "/hurdle/static/js/main.195e53d7.js.map"
+    "main.7217d446.css.map": "/hurdle/static/css/main.7217d446.css.map",
+    "main.3b78bf95.js.map": "/hurdle/static/js/main.3b78bf95.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c1e4d56.css",
-    "static/js/main.195e53d7.js"
+    "static/css/main.7217d446.css",
+    "static/js/main.3b78bf95.js"
   ]
 }
