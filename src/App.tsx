@@ -33,8 +33,8 @@ import { ReactComponent as Settings } from './data/Settings.svg'
 type State = {
   answer: (d: Difficulty) => Answer
   gameState: PlayState
-  board: Row[]
-  cellStatuses: CellStatus[][]
+  board: (d: Difficulty) => Row[]
+  cellStatuses: (d: Difficulty) => CellStatus[][]
   currentRowNum: number
   currentCol: Column
   charStatuses: () => { [key: string]: CellStatus }
@@ -68,8 +68,9 @@ function App() {
   const initialStates: State = {
     answer: (d: Difficulty) => getRandomAnswer(d),
     gameState: PlayState.Playing,
-    board: Array.from({ length: rowCount }, () => ({})),
-    cellStatuses: Array(rowCount).fill(Array(columns.length).fill(CellStatus.Unguessed)),
+    board: (d: Difficulty) => Array.from({ length: rowCount(d) }, () => ({})),
+    cellStatuses: (d: Difficulty) =>
+      Array(rowCount(d)).fill(Array(columns.length).fill(CellStatus.Unguessed)),
     currentRowNum: 0,
     currentCol: 0,
     charStatuses: () => {
@@ -86,11 +87,6 @@ function App() {
   }
 
   const [gameState, setGameState] = useLocalStorage('stateGameState', initialStates.gameState)
-  const [board, setBoard] = useLocalStorage('stateBoard', initialStates.board)
-  const [cellStatuses, setCellStatuses] = useLocalStorage(
-    'stateCellStatuses',
-    initialStates.cellStatuses
-  )
   const [currentRowNum, setCurrentRow] = useLocalStorage(
     'stateCurrentRow',
     initialStates.currentRowNum
@@ -111,11 +107,16 @@ function App() {
   const [infoModalIsOpen, setInfoModalIsOpen] = useState(firstTime)
   const [settingsModalIsOpen, setSettingsModalIsOpen] = useState(false)
   const [difficultyLevel, persistDifficultyLevel] = useLocalStorage('difficulty', Difficulty.Normal)
+  const [cellStatuses, setCellStatuses] = useLocalStorage(
+    'stateCellStatuses',
+    initialStates.cellStatuses(difficultyLevel)
+  )
   const [answer, setAnswer] = useLocalStorage('stateAnswer', initialStates.answer(difficultyLevel))
   const setDifficultyLevel = (d: Difficulty) => {
     persistDifficultyLevel(d)
     newGame(d)
   }
+  const [board, setBoard] = useLocalStorage('stateBoard', initialStates.board(difficultyLevel))
   const getDifficultyLevelInstructions = () => {
     if (difficultyLevel === Difficulty.Easy) {
       return `
@@ -168,7 +169,7 @@ function App() {
     }
   }, [answer, gameState])
 
-  function getCellStatus(row: number, col: number) {
+  function getCellStatus(row: number, col: number): CellStatus {
     return cellStatuses[row][col] ?? CellStatus.Unguessed
   }
 
@@ -223,7 +224,7 @@ function App() {
       return
     }
 
-    if (currentRow === 6) return
+    if (currentRow === rowCount) return
 
     updateCellStatuses(row, currentRowNum)
     updateCharStatuses(row)
@@ -264,17 +265,18 @@ function App() {
       var streak = currentStreak + 1
       setCurrentStreak(streak)
       setLongestStreak((prev: number) => (streak > prev ? streak : prev))
-    } else if (gameState === PlayState.Playing && currentRowNum === 6) {
+    } else if (gameState === PlayState.Playing && currentRowNum === rowCount(difficultyLevel)) {
       setGameState(PlayState.Lost)
       setCurrentStreak(0)
     }
   }, [
     cellStatuses,
     currentRowNum,
-    gameState,
-    setGameState,
     currentStreak,
+    difficultyLevel,
+    gameState,
     setCurrentStreak,
+    setGameState,
     setLongestStreak,
   ])
 
@@ -288,7 +290,7 @@ function App() {
   const newGame = (difficulty: Difficulty) => {
     setAnswer(initialStates.answer(difficulty))
     setGameState(initialStates.gameState)
-    setBoard(initialStates.board)
+    setBoard(initialStates.board(difficulty))
     setCellStatuses(initialStates.cellStatuses)
     setCurrentRow(initialStates.currentRowNum)
     setCharStatuses(initialStates.charStatuses())

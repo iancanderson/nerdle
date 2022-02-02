@@ -30,7 +30,13 @@ export const allOperators = easyOperators.concat(normalOperators, hardOperators)
 
 export type Column = 0 | 1 | 2 | 3 | 4 | 5
 export const columns: Column[] = [0, 1, 2, 3, 4, 5]
-export const rowCount: number = 6
+export const rowCount = (d: Difficulty): number => {
+  if (d === Difficulty.Hard) {
+    return 5
+  } else {
+    return 6
+  }
+}
 
 export enum CellStatus {
   Green = 'green',
