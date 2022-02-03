@@ -1,6 +1,6 @@
 # hurdle
 
-🔗 https://iancanderson.github.io/hurdle/
+🔗 https://hurdle.iancanderson.com
 
 It's kind of like [Wordle](https://www.powerlanguage.co.uk/wordle/), but for numbers.
 
