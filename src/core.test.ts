@@ -93,7 +93,9 @@ test('newCellStatuses adds gray statuses when number is already correctly guesse
     operandB: 4,
     result: 36,
   }
-  const prev = Array(rowCount).fill(Array(columns.length).fill(CellStatus.Unguessed))
+  const prev = Array(rowCount(Difficulty.Normal)).fill(
+    Array(columns.length).fill(CellStatus.Unguessed)
+  )
   const row: Row = {
     operandA: 6,
     operator: '*' as Operator,
@@ -120,7 +122,9 @@ test('newCellStatuses adds yellow statuses when number is not correctly guessed 
     operandB: 4,
     result: 36,
   }
-  const prev = Array(rowCount).fill(Array(columns.length).fill(CellStatus.Unguessed))
+  const prev = Array(rowCount(Difficulty.Normal)).fill(
+    Array(columns.length).fill(CellStatus.Unguessed)
+  )
   const row: Row = {
     operandA: 6,
     operator: '*' as Operator,
@@ -147,7 +151,9 @@ test('newCellStatuses adds yellow statuses when number is correctly guessed in t
     operandB: 7,
     result: 35,
   }
-  const prev = Array(rowCount).fill(Array(columns.length).fill(CellStatus.Unguessed))
+  const prev = Array(rowCount(Difficulty.Normal)).fill(
+    Array(columns.length).fill(CellStatus.Unguessed)
+  )
   const row: Row = {
     operandA: 7,
     operator: '*' as Operator,
