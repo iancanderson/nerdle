@@ -278,7 +278,6 @@ function App() {
 
       var streak = currentStreak + 1
       setCurrentStreak(streak)
-      setGuessesInStreak(0)
       setLongestStreak((prev: number) => (streak > prev ? streak : prev))
     } else if (gameState === PlayState.Playing && currentRowNum === 6) {
       setGameState(PlayState.Lost)
