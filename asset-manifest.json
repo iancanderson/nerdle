@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2507315.css",
-    "main.js": "/static/js/main.c8eb244f.js",
+    "main.css": "/static/css/main.5d1661be.css",
+    "main.js": "/static/js/main.23205dbd.js",
     "static/media/Cross.png": "/static/media/Cross.cbf77228e847522eff11.png",
-    "static/media/Success.png": "/static/media/Success.df533be8f86a57bc5946.png",
     "static/media/Ranade-Variable.ttf": "/static/media/Ranade-Variable.bb177f94a709e8e8f396.ttf",
     "index.html": "/index.html",
     "static/media/Github.svg": "/static/media/Github.6a9e1709e73c56888979048bb60e60a5.svg",
     "static/media/Settings.svg": "/static/media/Settings.0808c435ed629b919ffa742a20d897f6.svg",
     "static/media/Info.svg": "/static/media/Info.ee717ac430bb01bfbbd42aa3dbffe913.svg",
     "static/media/Close.svg": "/static/media/Close.f34771d5d250820d8c5ec83c816bf8f5.svg",
-    "main.d2507315.css.map": "/static/css/main.d2507315.css.map",
-    "main.c8eb244f.js.map": "/static/js/main.c8eb244f.js.map"
+    "main.5d1661be.css.map": "/static/css/main.5d1661be.css.map",
+    "main.23205dbd.js.map": "/static/js/main.23205dbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2507315.css",
-    "static/js/main.c8eb244f.js"
+    "static/css/main.5d1661be.css",
+    "static/js/main.23205dbd.js"
   ]
 }
