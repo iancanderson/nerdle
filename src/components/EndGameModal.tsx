@@ -18,9 +18,9 @@ type Props = {
   avgGuessesPerGame: number
 }
 
-const avgGuessesPerGameGreatThreshold = 2.8
-const avgGuessesPerGameGoodThreshold = 3.0
-const avgGuessesPerGameOkayThreshold = 3.2
+const avgGuessesPerGameGreatThreshold = 2.9
+const avgGuessesPerGameGoodThreshold = 3.2
+const avgGuessesPerGameOkayThreshold = 3.5
 
 const streakOkayThreshold = 25
 const streakGoodThreshold = 50
