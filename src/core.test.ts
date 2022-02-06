@@ -169,7 +169,7 @@ test('newCellStatuses adds yellow statuses when number is correctly guessed in t
 
 test('rowCharacters displays strings to render a row', () => {
   const row = { operandA: 1, operator: '+' as Operator, operandB: 2, result: 3 }
-  expect(rowCharacters(row)).toEqual(['1', '+', '2', '=', '', '3'])
+  expect(rowCharacters(row)).toEqual(['1', '+', '2', '=', '3', ''])
 })
 
 test('validEquation is false if result greater than 99', () => {
