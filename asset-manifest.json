@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.32dacaff.css",
-    "main.js": "/static/js/main.8d3d3b75.js",
+    "main.js": "/static/js/main.69a22a14.js",
     "static/media/Cross.png": "/static/media/Cross.cbf77228e847522eff11.png",
     "static/media/Ranade-Variable.ttf": "/static/media/Ranade-Variable.bb177f94a709e8e8f396.ttf",
     "index.html": "/index.html",
@@ -10,10 +10,10 @@
     "static/media/Info.svg": "/static/media/Info.ee717ac430bb01bfbbd42aa3dbffe913.svg",
     "static/media/Close.svg": "/static/media/Close.f34771d5d250820d8c5ec83c816bf8f5.svg",
     "main.32dacaff.css.map": "/static/css/main.32dacaff.css.map",
-    "main.8d3d3b75.js.map": "/static/js/main.8d3d3b75.js.map"
+    "main.69a22a14.js.map": "/static/js/main.69a22a14.js.map"
   },
   "entrypoints": [
     "static/css/main.32dacaff.css",
-    "static/js/main.8d3d3b75.js"
+    "static/js/main.69a22a14.js"
   ]
 }
