@@ -56,7 +56,7 @@ export function nextCharIsAnOperator(row: Row): boolean {
 export function backspace(row: Row) {
   if (row.result != null) {
     if (row.result >= 10) {
-      row.result = row.result % 10
+      row.result = Math.floor(row.result / 10)
     } else {
       row.result = undefined
     }
@@ -95,19 +95,9 @@ export function rowCharacter(row: Row, col: Column): string {
     case 3:
       return '='
     case 4:
-      if (row.result === undefined || row.result < 10) {
-        return ''
-      } else {
-        const resultString = row.result.toString()
-        return resultString[0]
-      }
+      return row.result?.toString()[0] || ''
     case 5:
-      if (row.result === undefined) {
-        return ''
-      } else {
-        const resultString = row.result.toString()
-        return resultString[1] || resultString[0] || ''
-      }
+      return row.result?.toString()[1] || ''
   }
 }
 
