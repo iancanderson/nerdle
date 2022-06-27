@@ -21,3 +21,4 @@ After submitting a guess, the numbers/operators will turn gray, green, or yellow
 Feel free to open an issue for any bugs or feature requests.
 
 To contribute to the code, see [CONTRIBUTING.md](https://github.com/iancanderson/hurdle/blob/main/CONTRIBUTING.md)
+
